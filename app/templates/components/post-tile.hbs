@@ -8,6 +8,8 @@
         <h4 class="header">{{post.title}}</h4>
         <p>{{post.text}}</p>
         <p>{{post.date}} {{post.author}}</p>
+        {{update-post post=post update="update"}}
+        <button {{action 'delete' post}} class="btn">Delete Post</button>
         </div>
       </div>
     </div>
