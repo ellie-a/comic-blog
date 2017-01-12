@@ -1,0 +1,36 @@
+{{navbar-fixed}}
+<div class="container">
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=title id="title" class="validate"}}
+          <label for="title">Entry Title</label>
+        </div>
+        <div class="input-field col s6">
+          {{input value=photo id="photo" class="validate"}}
+          <label for="photo">Image</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=author id="author" class="validate"}}
+          <label for="author">Entry Author</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=text id="text" class="validate"}}
+          <label for="text">Content</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=date id="date" class="validate"}}
+          <label for="date">Date Of Post</label>
+        </div>
+      </div>
+    </form>
+    <button {{action 'savePost'}}>Post</button>
+  </div>
+</div>
