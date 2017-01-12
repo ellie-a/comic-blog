@@ -1,0 +1,21 @@
+{{navbar-fixed}}
+
+<div class="container">
+  <h1>Image Comics Blog</h1>
+
+  <p>A community for nerds to review and discuss their favourite Image comics</p>
+
+  <p>Please share your thoughts below!</p>
+
+
+  <ul>
+    {{#each model as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+  </ul>
+
+</div>
+
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
